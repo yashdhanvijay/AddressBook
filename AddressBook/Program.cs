@@ -2,10 +2,15 @@
 
 namespace AddressBook
 {
-    public class Contact
+    public class program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Address Book Problem Statement\n");
+            Console.WriteLine("Enter your details :-\n");
+            Console.WriteLine("First Name - " + "\n" + "Last Name - " + "\n" + "Address - " + "\n" +
+                "City Name - " + "\n" + "State Name - " + "\n" + "Zip Code - " + "\n" +
+                "Phone Number - " + "\n" + "Email ID - ");
             Contact contact = new Contact()
             {
                 FirstName = Console.ReadLine(),
@@ -13,11 +18,13 @@ namespace AddressBook
                 Address = Console.ReadLine(),
                 City = Console.ReadLine(),
                 State = Console.ReadLine(),
-                Zip = Convert.ToInt32(Console.ReadLine()),
-                PhoneNumber = Console.ReadLine(),
+                Zip = Convert.ToInt64(Console.ReadLine()),
+                PhoneNumber = Convert.ToInt64(Console.ReadLine()),
                 Email = Console.ReadLine(),
             };
-            Console.WriteLine("contact details" + "\n" + contact.FirstName + "\n" + contact.LastName + "\n" + contact.Address + "\n" + contact.City + "\n" + contact.State + "\n" + contact.Zip +"\n" + contact.PhoneNumber  +"\n" + contact.Email );
+            Console.WriteLine("\nFirst Name - " + contact.FirstName + "\nLast Name - " + contact.LastName + "\nAddress - " + contact.Address +
+                "\nCity Name - " + contact.City + "\nState Name - " + contact.State + "\nZip Code - " + contact.Zip +
+                "\nPhone Number - " + contact.PhoneNumber + "\nEmail ID - " + contact.Email);
         }
     }
 }
